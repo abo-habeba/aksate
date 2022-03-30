@@ -3,9 +3,9 @@
 
 <head dir="rtl">
     <meta charset="UTF-8">
-    <meta name="description" content="Ù…Ù† Ø®Ù„Ø§Ù„ Ù‡Ø°Ø§ Ø§Ù„Ù…ÙˆÙ‚Ø¹ ÙŠÙ…ÙƒÙ†Ùƒ Ø­Ø³Ø§Ø¨ Ø§Ù„Ø§Ù‚Ø³Ø§Ø· Ù„Ø§ÙŠ Ù…Ù†ØªØ¬ Ø¨ÙƒÙ„ Ø³Ù‡ÙˆÙ„Ù‡  ">
+    <meta name="description" content="ãä ÎáÇá åĞÇ ÇáãæŞÚ íãßäß ÍÓÇÈ ÇáÇŞÓÇØ áÇí ãäÊÌ Èßá Óåæáå  ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Ø­Ø³Ø§Ø¨ Ø§Ù„Ù‚Ø³Ø·</title>
+    <title> ÍÓÇÈ ÇáŞÓØ</title>
     <style>
           *{
             font-family:"Droid Arabic Kufi", sans-serif;
@@ -17,7 +17,7 @@
             scroll-behavior: smooth;
             transition: 0.7s ease;
             text-align: center;
-            font-size: 30px;
+            font-size: 3vh;
             font-weight: 900;
             color: blue;
         }
@@ -36,8 +36,8 @@
             align-items: center;
         }
         .title{
-            font-size: 40px;
-            margin: 30px;
+            font-size: 7vh;
+            margin: 3vh;
         }
         .hid-in{
             display: none;
@@ -56,31 +56,25 @@
 
         }
         input,h5{
-          	width: 200px;
-            margin: 5px .30px;
-            padding: 5px 5px;
+            margin: 1vh .3vh;
+            padding: .2vh 0vh;
             border-radius: 2vh;
         }
         h5{
-            margin-left: 10px;
-            min-width: 180px;
+            min-width: 20vh;
             box-shadow: 5px 5px;
             background-color: #e6e6f5;
         }
         input{
+            max-width: 30vh;
             border: blue solid 1px;
         }
         @media (max-width:420px) {
-        .child{
-            flex-direction: column;
-        }
-        .title{
-            margin: 10px;
-        }
-       input,h5{
-            width: 300px;
+        h5{
+            min-width: 35vh;
         }
         input{
+            max-width: 35vh;
             border: blue solid 1px;
         }
         }
@@ -89,51 +83,50 @@
 
 <body>
     <div class="contener">
-        <h1 class="title"> Ø­Ø³Ø§Ø¨ Ø§Ù„ØªÙ‚Ø³ÙŠØ·</h1>
+        <h1 class="title"> ÍÓÇÈ ÇáÊŞÓíØ</h1>
         <div class="form">
             <div class="child">
-                <h5>  Ø³Ø¹Ø± Ø§Ù„Ù…Ù†ØªØ¬ ÙƒØ§Ø´ </h5><!--1-->
+                <h5>  ÓÚÑ ÇáãäÊÌ ßÇÔ </h5><!--1-->
                 <input  type="number" id="input1"  onkeyup=" inputs();">
             </div>
             <div class="child">
-                <h5>  Ø§Ù„Ù…Ù‚Ø¯Ù… </h5><!--2-->
+                <h5>  ÇáãŞÏã </h5><!--2-->
                 <input  type="number" id="input2" onkeyup=" inputs();">
             </div>
             <div class="child">
-                <h5> Ø¹Ø¯Ø¯ Ø§Ù„Ø´Ù‡ÙˆØ± </h5><!--3-->
+                <h5> ÚÏÏ ÇáÔåæÑ </h5><!--3-->
                 <input  type="number" id="input3" onkeyup=" inputs();">
             </div>
             <div class="child">
-                <h5 class="hid-in" >  Ù†Ø³Ø¨Ø© Ø§Ù„Ø´Ù‡Ø± Ø§Ù„ÙˆØ§Ø­Ø¯</h5><!--4-->
+                <h5 class="hid-in" >  äÓÈÉ ÇáÔåÑ ÇáæÇÍÏ</h5><!--4-->
                 <input class="hid-in" type="number" id="input4" value="0.023" disabled>
             </div>
             <div class="child">
-                <h5 class="hid-in" > (5) Ø§Ù„Ø¨Ø§Ù‚ÙŠ Ø¨Ø¹Ø¯ Ø§Ù„Ù…Ù‚Ø¯Ù…</h5>
+                <h5 class="hid-in" > (5) ÇáÈÇŞí ÈÚÏ ÇáãŞÏã</h5>
                 <input class="hid-in" type="number" id="input5" disabled>
             </div>
             <div class="child">
-                <h5 class="hid-in" > (6) Ù†Ø³Ø¨Ø© Ø§Ø¬Ù…Ø§Ù„ÙŠ Ø§Ù„Ø´Ù‡ÙˆØ±</h5>
+                <h5 class="hid-in" > (6) äÓÈÉ ÇÌãÇáí ÇáÔåæÑ</h5>
                 <input class="hid-in" type="number" id="input6" disabled>
             </div>
             <div class="child">
-                <h5 class="hid-in" > (7) Ù†Ø³Ø¨Ø© Ø§Ù„Ø±Ø¨Ø­ %</h5>
+                <h5 class="hid-in" > (7) äÓÈÉ ÇáÑÈÍ %</h5>
                 <input class="hid-in" type="number" id="input7" disabled>
             </div>
             <div class="child">
-                <h5 class="hid-in" > (8) Ø³Ø¹Ø± Ø§Ù„Ù…Ù†ØªØ¬ Ù‚Ø³Ø· 0.0</h5>
+                <h5 class="hid-in" > (8) ÓÚÑ ÇáãäÊÌ ŞÓØ 0.0</h5>
                 <input class="hid-in" type="number" id="input8" disabled>
             </div>
-            
             <div class="child">
-                <h5 class="hid-in" > (9) Ø§Ù„Ù…Ø¨Ù„Øº Ø§Ù„Ù…Ù‚Ø³Ø·</h5>
+                <h5 class="hid-in" > (9) ÇáãÈáÛ ÇáãŞÓØ</h5>
                 <input class="hid-in" type="number" id="input9" disabled>
             </div>
             <div class="child">
-                <h5> Ø§Ù„Ù‚Ø³Ø· Ø§Ù„Ø´Ù‡Ø±ÙŠ </h5><!--10-->
+                <h5> ÇáŞÓØ ÇáÔåÑí </h5><!--10-->
                 <input  type="number" id="input10"disabled>
             </div>
             <div class="child">
-                <h5> Ø³Ø¹Ø± Ø§Ù„Ù…Ù†ØªØ¬ Ù‚Ø³Ø·</h5><!--11-->
+                <h5> ÓÚÑ ÇáãäÊÌ ŞÓØ</h5><!--11-->
                 <input  type="number" id="input11"disabled> 
             </div>
         </div>
@@ -146,7 +139,7 @@
                 var num3 = document.getElementById('input3').value;
                 var num4 = document.getElementById('input4').value;
                 var num5 = document.getElementById("input5");
-                var num6 = document.getElementById("input6");
+              var num6 = document.getElementById("input6");
                 var num7 = document.getElementById("input7");
                 var num8 = document.getElementById("input8");
                 var num9 = document.getElementById("input9");
@@ -154,25 +147,25 @@
 
                 var num11 = document.getElementById("input11");
 
-            // Ø§Ù„Ø¨Ø§Ù‚ÙŠ Ø¨Ø¹Ø¯ Ø§Ù„Ù…Ù‚Ø¯Ù… 
+            // ÇáÈÇŞí ÈÚÏ ÇáãŞÏã 
                 var sub = Number(num1) - Number(num2);
                 num5.value = sub;
-                // Ù†Ø³Ø¨Ø© Ø§Ø¬Ù…Ø§Ù„ÙŠ Ø§Ù„Ø´Ù‡ÙˆØ± 
+                // äÓÈÉ ÇÌãÇáí ÇáÔåæÑ 
                 var mult = Number(num4) * Number(num3);
                 num6.value = mult;
-                // Ù†Ø³Ø¨Ø© Ø§Ø¬Ù…Ø§Ù„ÙŠ Ø§Ù„Ø±Ø¨Ø­
+                // äÓÈÉ ÇÌãÇáí ÇáÑÈÍ
                 var mult2 = Number(num5.value) * Number(num6.value);
                 num7.value = mult2;
-                // Ø³Ø¹Ø± Ø§Ù„Ù…Ù†ØªØ¬ Ù‚Ø³Ø· Ù‚Ø¨Ù„ Ø§Ù„ØªÙ‚Ø±ÙŠØ¨ 
+                // ÓÚÑ ÇáãäÊÌ ŞÓØ ŞÈá ÇáÊŞÑíÈ 
                 var sum = Number(num7.value) + Number(num1);
                 num8.value=sum;
-                // Ø§Ø§Ù„Ù…Ø¨Ù„Øº Ø§Ù„Ù…Ù‚Ø³Ø· 
+                // ÇÇáãÈáÛ ÇáãŞÓØ 
                 var sum2 = Number(num7.value) + Number(num5.value);
                 num9.value = sum2;
-                // Ø§Ù„Ù‚Ø³Ø· Ø§Ù„Ø´Ù‡Ø±ÙŠ 
+                // ÇáŞÓØ ÇáÔåÑí 
                 var div = Number(num9.value) / Number(num3);
                 num10.value = div.toFixed();
-                // Ø³Ø¹Ø± Ø§Ù„Ù…Ù†ØªØ¬ Ù‚Ø³Ø· 
+                // ÓÚÑ ÇáãäÊÌ ŞÓØ 
                 var total = Number(num10.value) * Number(num3) + Number(num2);
                 num11.value = total ;
               } 
