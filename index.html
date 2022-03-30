@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head dir="rtl">
+    <meta charset="UTF-8">
+    <meta name="description" content="من خلال هذا الموقع يمكنك حساب الاقساط لاي منتج بكل سهوله  ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> حساب القسط</title>
+    <style>
+          *{
+            font-family:"Droid Arabic Kufi", sans-serif;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            transition: 0.7s ease;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 900;
+            color: blue;
+        }
+        :root{
+
+        }
+        body{
+            background-image: url();
+            background-repeat: no-repeat;
+        }
+        .contener{
+            min-height: 66vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            font-size: 40px;
+            margin: 30px;
+        }
+        .hid-in{
+            display: none;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .child{
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+        }
+        input,h5{
+          	width: 200px;
+            margin: 5px .30px;
+            padding: 5px 5px;
+            border-radius: 2vh;
+        }
+        h5{
+            margin-left: 10px;
+            min-width: 180px;
+            box-shadow: 5px 5px;
+            background-color: #e6e6f5;
+        }
+        input{
+            border: blue solid 1px;
+        }
+        @media (max-width:420px) {
+        .child{
+            flex-direction: column;
+        }
+        .title{
+            margin: 10px;
+        }
+       input,h5{
+            width: 300px;
+        }
+        input{
+            border: blue solid 1px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contener">
+        <h1 class="title"> حساب التقسيط</h1>
+        <div class="form">
+            <div class="child">
+                <h5>  سعر المنتج كاش </h5><!--1-->
+                <input  type="number" id="input1"  onkeyup=" inputs();">
+            </div>
+            <div class="child">
+                <h5>  المقدم </h5><!--2-->
+                <input  type="number" id="input2" onkeyup=" inputs();">
+            </div>
+            <div class="child">
+                <h5> عدد الشهور </h5><!--3-->
+                <input  type="number" id="input3" onkeyup=" inputs();">
+            </div>
+            <div class="child">
+                <h5 class="hid-in" >  نسبة الشهر الواحد</h5><!--4-->
+                <input class="hid-in" type="number" id="input4" value="0.023" disabled>
+            </div>
+            <div class="child">
+                <h5 class="hid-in" > (5) الباقي بعد المقدم</h5>
+                <input class="hid-in" type="number" id="input5" disabled>
+            </div>
+            <div class="child">
+                <h5 class="hid-in" > (6) نسبة اجمالي الشهور</h5>
+                <input class="hid-in" type="number" id="input6" disabled>
+            </div>
+            <div class="child">
+                <h5 class="hid-in" > (7) نسبة الربح %</h5>
+                <input class="hid-in" type="number" id="input7" disabled>
+            </div>
+            <div class="child">
+                <h5 class="hid-in" > (8) سعر المنتج قسط 0.0</h5>
+                <input class="hid-in" type="number" id="input8" disabled>
+            </div>
+            
+            <div class="child">
+                <h5 class="hid-in" > (9) المبلغ المقسط</h5>
+                <input class="hid-in" type="number" id="input9" disabled>
+            </div>
+            <div class="child">
+                <h5> القسط الشهري </h5><!--10-->
+                <input  type="number" id="input10"disabled>
+            </div>
+            <div class="child">
+                <h5> سعر المنتج قسط</h5><!--11-->
+                <input  type="number" id="input11"disabled> 
+            </div>
+        </div>
+    </div>
+    <script>
+        function inputs()
+              {
+                var num1 = document.getElementById('input1').value;
+                var num2 = document.getElementById('input2').value;
+                var num3 = document.getElementById('input3').value;
+                var num4 = document.getElementById('input4').value;
+                var num5 = document.getElementById("input5");
+                var num6 = document.getElementById("input6");
+                var num7 = document.getElementById("input7");
+                var num8 = document.getElementById("input8");
+                var num9 = document.getElementById("input9");
+                var num10 = document.getElementById("input10");
+
+                var num11 = document.getElementById("input11");
+
+            // الباقي بعد المقدم 
+                var sub = Number(num1) - Number(num2);
+                num5.value = sub;
+                // نسبة اجمالي الشهور 
+                var mult = Number(num4) * Number(num3);
+                num6.value = mult;
+                // نسبة اجمالي الربح
+                var mult2 = Number(num5.value) * Number(num6.value);
+                num7.value = mult2;
+                // سعر المنتج قسط قبل التقريب 
+                var sum = Number(num7.value) + Number(num1);
+                num8.value=sum;
+                // االمبلغ المقسط 
+                var sum2 = Number(num7.value) + Number(num5.value);
+                num9.value = sum2;
+                // القسط الشهري 
+                var div = Number(num9.value) / Number(num3);
+                num10.value = div.toFixed();
+                // سعر المنتج قسط 
+                var total = Number(num10.value) * Number(num3) + Number(num2);
+                num11.value = total ;
+              } 
+    </script>
+</body>
+
+</html>
