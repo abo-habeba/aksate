@@ -57,7 +57,7 @@
       background-color: #e6e6f5;
   }
   input{
-      max-width: 30vh;
+      max-width: 20vh;
       border: blue solid 1px;
   }
   @media (max-width:420px) {
