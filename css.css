@@ -8,7 +8,7 @@
       scroll-behavior: smooth;
       transition: 0.7s ease;
       text-align: center;
-      font-size: 2vh;
+      font-size: 20px;
       font-weight: 900;
       color: blue;
   }
@@ -20,15 +20,14 @@
       background-repeat: no-repeat;
   }
   .contener{
-  
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
   }
   .title{
-      font-size: 5vh;
-      margin: 2vh;
+      font-size: 50px;
+      margin: 20px;
   }
   .hid-in{
       display: none;
@@ -47,25 +46,23 @@
   
   }
   input,h5{
-      margin: 1vh .3vh;
-      padding: .2vh 0vh;
-      border-radius: 2vh;
+      margin: 10px 4px;
+      padding: 25px 0px;
+      border-radius: 20px;
+      width: 300px;
   }
   h5{
-      width: 300px;
       box-shadow: 5px 5px;
       background-color: #e6e6f5;
   }
   input{
-      width: 300px;
       border: blue solid 1px;
   }
   @media (max-width:420px) {
-  h5{
+  input,h5{
       width: 300px;
   }
   input{
-      width: 300px;
       border: blue solid 1px;
   }
   }
