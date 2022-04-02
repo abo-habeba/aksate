@@ -5,80 +5,9 @@
     <meta charset="UTF-8">
     <meta name="description" content="من خلال هذا الموقع يمكنك حساب الاقساط لاي منتج بكل سهوله  ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css" type="text/css" media="all" />
     <title>  حساب القسط</title>
-    <style>
-          *{
-            font-family:"Droid Arabic Kufi", sans-serif;
-            padding: 0;
-            margin: 0;
-            text-decoration: none;
-            list-style: none;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-            transition: 0.7s ease;
-            text-align: center;
-            font-size: 3vh;
-            font-weight: 900;
-            color: blue;
-        }
-        :root{
 
-        }
-        body{
-            background-image: url();
-            background-repeat: no-repeat;
-        }
-        .contener{
-            min-height: 66vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .title{
-            font-size: 7vh;
-            margin: 3vh;
-        }
-        .hid-in{
-            display: none;
-        }
-        .form{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .child{
-            display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-
-        }
-        input,h5{
-            margin: 1vh .3vh;
-            padding: .2vh 0vh;
-            border-radius: 2vh;
-        }
-        h5{
-            min-width: 20vh;
-            box-shadow: 5px 5px;
-            background-color: #e6e6f5;
-        }
-        input{
-            max-width: 30vh;
-            border: blue solid 1px;
-        }
-        @media (max-width:420px) {
-        h5{
-            min-width: 35vh;
-        }
-        input{
-            max-width: 35vh;
-            border: blue solid 1px;
-        }
-        }
-    </style>
 </head>
 
 <body>
@@ -132,45 +61,7 @@
             </div>
         </div>
     </div>
-    <script>
-        function inputs()
-              {
-                var num1 = document.getElementById('input1').value;
-                var num2 = document.getElementById('input2').value;
-                var num3 = document.getElementById('input3').value;
-                var num4 = document.getElementById('input4').value;
-                var num5 = document.getElementById("input5");
-                var num6 = document.getElementById("input6");
-                var num7 = document.getElementById("input7");
-                var num8 = document.getElementById("input8");
-                var num9 = document.getElementById("input9");
-                var num10 = document.getElementById("input10");
-
-                var num11 = document.getElementById("input11");
-
-            // الباقي بعد المقدم 
-                var sub = Number(num1) - Number(num2);
-                num5.value = sub;
-                // نسبة اجمالي الشهور 
-                var mult = Number(num4) * Number(num3);
-                num6.value = mult;
-                // نسبة اجمالي الربح
-                var mult2 = Number(num5.value) * Number(num6.value);
-                num7.value = mult2;
-                // سعر المنتج قسط قبل التقريب 
-                var sum = Number(num7.value) + Number(num1);
-                num8.value=sum;
-                // االمبلغ المقسط 
-                var sum2 = Number(num7.value) + Number(num5.value);
-                num9.value = sum2;
-                // القسط الشهري 
-                var div = Number(num9.value) / Number(num3);
-                num10.value = div.toFixed();
-                // سعر المنتج قسط 
-                var total = Number(num10.value) * Number(num3) + Number(num2);
-                num11.value = total ;
-              } 
-    </script>
+    <script>src="js.js" </script>
 </body>
 
 </html>
