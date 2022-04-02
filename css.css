@@ -1,0 +1,71 @@
+          *{
+            font-family:"Droid Arabic Kufi", sans-serif;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            transition: 0.7s ease;
+            text-align: center;
+            font-size: 3vh;
+            font-weight: 900;
+            color: blue;
+        }
+        :root{
+
+        }
+        body{
+            background-image: url();
+            background-repeat: no-repeat;
+        }
+        .contener{
+            min-height: 66vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            font-size: 7vh;
+            margin: 3vh;
+        }
+        .hid-in{
+            display: none;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .child{
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+        }
+        input,h5{
+            margin: 1vh .3vh;
+            padding: .2vh 0vh;
+            border-radius: 2vh;
+        }
+        h5{
+            min-width: 20vh;
+            box-shadow: 5px 5px;
+            background-color: #e6e6f5;
+        }
+        input{
+            max-width: 30vh;
+            border: blue solid 1px;
+        }
+        @media (max-width:420px) {
+        h5{
+            min-width: 35vh;
+        }
+        input{
+            max-width: 35vh;
+            border: blue solid 1px;
+        }
+        }
