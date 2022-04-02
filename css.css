@@ -52,20 +52,20 @@
       border-radius: 2vh;
   }
   h5{
-      width: 20vh;
+      width: 10vh;
       box-shadow: 5px 5px;
       background-color: #e6e6f5;
   }
   input{
-      width: 20vh;
+      width: 10vh;
       border: blue solid 1px;
   }
   @media (max-width:420px) {
   h5{
-      width: 20vh;
+      width: 10vh;
   }
   input{
-      width: 20vh;
+      width: 10vh;
       border: blue solid 1px;
   }
   }
