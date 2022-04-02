@@ -5,19 +5,9 @@
       text-decoration: none;
       list-style: none;
       box-sizing: border-box;
-      scroll-behavior: smooth;
-      transition: 0.7s ease;
       text-align: center;
-      
       font-weight: 900;
       color: blue;
-  }
-  :root{
-  
-  }
-  body{
-      background-image: url();
-      background-repeat: no-repeat;
   }
   .contener{
       display: flex;
@@ -27,7 +17,7 @@
   }
   .title{
       font-size: 50px;
-      margin: 10px;
+      
   }
   .hid-in{
       display: none;
