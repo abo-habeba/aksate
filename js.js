@@ -1,4 +1,4 @@
-    <script>
+
         function inputs()
               {
                 var num1 = document.getElementById('input1').value;
@@ -36,4 +36,3 @@
                 var total = Number(num10.value) * Number(num3) + Number(num2);
                 num11.value = total ;
               } 
-    </script>
