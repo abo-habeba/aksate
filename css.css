@@ -62,10 +62,10 @@
   }
   @media (max-width:420px) {
   h5{
-      min-width: 35vh;
+      min-width: 20vh;
   }
   input{
-      max-width: 35vh;
+      max-width: 20vh;
       border: blue solid 1px;
   }
   }
