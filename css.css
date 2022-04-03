@@ -4,6 +4,7 @@
       margin: 0;
       text-decoration: none;
       list-style: none;
+      font-size: 18px;
       box-sizing: border-box;
       text-align: center;
       font-weight: 900;
@@ -16,8 +17,8 @@
       align-items: center;
   }
   .title{
-      font-size: 20px;
-      margin: 5px;
+      font-size: 30px;
+      margin: 2px;
   }
   .hid-in{
       display: none;
@@ -36,8 +37,8 @@
   
   }
   input,h5{
-      margin: 3px 0px;
-      padding: 3px 0px;
+      margin: 2px 0px;
+      padding: 2px 0px;
       border-radius: 20px;
       width: 300px;
   }
