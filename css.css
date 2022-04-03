@@ -23,7 +23,7 @@
   .hid-in{
       display: none;
   }
-  .form{
+  form{
       display: flex;
       flex-direction: column;
       align-items: center;
