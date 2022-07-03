@@ -10,28 +10,30 @@
       font-weight: 900;
       color: blue;
   }
+  .gear img{
+    width: 35px;
+    position: fixed;
+    top: 15px;
+    left: 0px;
+  }
 .settings{
   position: relative;
   position: fixed;
   top: 50px;
   left: 0;
   background-color: #3f51b5d9;
-  width: 200px;
+  width: 300px;
   min-height: 100vh;
   z-index: 100;
-  padding-top: 15px;
   border-radius: 0 6px 0 0;
 }
-
 .open{
   display: none;
 }
-
-.gear img{
-  width: 35px;
-  position: fixed;
-  top: 15px;
-  left: 0px;
+.settings-obx{
+  background-color:#d7ccd7f7;
+  padding: 20px 0px;
+  margin-bottom: 10px;
 }
 .rate{
   display: flex;
@@ -41,8 +43,8 @@
 }
 .settings h5,
 .settings input{
-  margin:2px;
-  padding: 3px;
+  margin:0px;
+  padding: 3px 10px;
   max-width: 85px;
 }
 .contener{
