@@ -1,4 +1,4 @@
-  *{
+*{
       font-family:"Droid Arabic Kufi", sans-serif;
       padding: 0;
       margin: 0;
@@ -10,50 +10,71 @@
       font-weight: 900;
       color: blue;
   }
-  .contener{
+.settings{
+  position: relative;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  background-color: #3f51b5d9;
+  width: 200px;
+  min-height: 100vh;
+  z-index: 100;
+  padding-top: 15px;
+  border-radius: 0 6px 0 0;
+}
+
+.open{
+  display: none;
+}
+
+.gear img{
+  width: 35px;
+  position: fixed;
+  top: 15px;
+  left: 0px;
+}
+.rate{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.settings h5,
+.settings input{
+  margin:2px;
+  padding: 3px;
+  max-width: 85px;
+}
+.contener{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  }
-  .title{
+}
+.title{
       font-size: 30px;
       margin: 2px;
-  }
-  .hid-in{
+}
+.hid-in{
       display: none;
-  }
-  form{
+}
+form{
+  
       display: flex;
       flex-direction: column;
       align-items: center;
-  }
-  .child{
-      display: flex;
-      flex-direction: row-reverse;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-  
-  }
-  input,h5{
-      margin: 2px 0px;
-      padding: 2px 0px;
-      border-radius: 20px;
-      width: 300px;
-  }
-  h5{
-      box-shadow: 3px 3px;
+}
+.child{
+  margin: 6px;
+}
+input,h5{
+  border-radius: 20px;
+  max-width: 300px;
+  padding: 5px 0;
+}
+h5{
       background-color: #e6e6f5;
-  }
+}
   input{
       border: blue solid 1px;
-  }
-  @media (max-width:420px) {
-  input,h5{
-      width: 300px;
-  }
-  input{
-      border: blue solid 1px;
-  }
-  }
+}
