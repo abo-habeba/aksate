@@ -55,9 +55,9 @@ function inputs(){
     localStorage.setItem("rate", num4);
 
     // share ================================================
-        let myp = `${lab2} ${num2}
-    ${lab3} ${num3}
-    ${lab10} ${num10.value}`;
+        let myp = `${lab2} ${num2.innerText}
+    ${lab3} ${num3.innerText}
+    ${lab10} ${num10.innerText}`;
     document.querySelector('.myp').innerText = myp;
 
     let shared = document.querySelector('.myp').innerText;
