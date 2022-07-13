@@ -55,22 +55,20 @@ function inputs(){
     localStorage.setItem("rate", num4);
 
     // share ================================================
-        let myp = `${lab2} "${num2.toString()}"
-    ${lab3} "${num3.toString()}"
-    ${lab10} "${num10.value.toString()}"`;
+        let myp = `${lab2} => "${num2}"
+    ${lab3} => "${num3.}"
+    ${lab10} => "${num10.value}"`;
     document.querySelector('.myp').innerText = myp;
 
     let shared = document.querySelector('.myp').innerText;
     const shareData = {
       text: shared, 
       }
+      };
     const btnShare = document.querySelector('.btn-share');
     btnShare.addEventListener('click', async () => {
     await navigator.share(shareData);
     });
-
-    };
-
 
 
 let gear = document.querySelector(".gear");
