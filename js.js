@@ -61,11 +61,13 @@ function inputs(){
 
     document.querySelector('.myp').innerText = myp;
 
+
     let shared = document.querySelector('.myp').innerText;
     shareData = {
       text: shared, 
     };
-};
+  };
+
     let btnShare = document.querySelector('.btn-share');
     btnShare.addEventListener('click', async () => {
     await navigator.share(shareData);
