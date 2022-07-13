@@ -55,17 +55,19 @@ function inputs(){
     localStorage.setItem("rate", num4);
 
     // share ================================================
-        let myp = `${lab2} => "${num2}"
-    ${lab3} => "${num3.}"
-    ${lab10} => "${num10.value}"`;
+    let myp = `${lab2} = ${num2}
+    ${lab3} = ${num3}
+    ${lab10} = ${num10.value}`;
+
     document.querySelector('.myp').innerText = myp;
+};
 
     let shared = document.querySelector('.myp').innerText;
-    const shareData = {
+    shareData = {
       text: shared, 
     };
-      };
-    const btnShare = document.querySelector('.btn-share');
+
+    let btnShare = document.querySelector('.btn-share');
     btnShare.addEventListener('click', async () => {
     await navigator.share(shareData);
     });
@@ -80,4 +82,4 @@ settings.classList.toggle("open");
 let myFooter =document.createElement('footer');
 document.body.appendChild(myFooter);
 myFooter.innerText = 'By Hesham Mohamed © 2022';
-myFooter.style.cssText = 'background-color: dimgray;  position: fixed; bottom:0px; width: 100%; height:50px; margin:0px; padding:0px; text-align:center; color:white;display: flex;align-items:center;justify-content: center';
+myFooter.style.cssText = 'background-color: #9e9e9e;  position: fixed; bottom:0px; width: 100%; height:50px; margin:0px; padding:0px; text-align:center; color:white;display: flex;align-items:center;justify-content: center';
