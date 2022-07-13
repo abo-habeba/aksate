@@ -63,7 +63,7 @@ function inputs(){
     let shared = document.querySelector('.myp').innerText;
     const shareData = {
       text: shared, 
-      }
+    };
       };
     const btnShare = document.querySelector('.btn-share');
     btnShare.addEventListener('click', async () => {
