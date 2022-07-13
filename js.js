@@ -60,13 +60,12 @@ function inputs(){
     ${lab10} = ${num10.value}`;
 
     document.querySelector('.myp').innerText = myp;
-
+};
 
     let shared = document.querySelector('.myp').innerText;
     shareData = {
       text: shared, 
     };
-  };
 
     let btnShare = document.querySelector('.btn-share');
     btnShare.addEventListener('click', async () => {
