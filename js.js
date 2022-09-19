@@ -90,15 +90,16 @@ btnTkrep.onclick = function () {
   }
 };
 
-document.querySelector(".myp");
 
-let shared = document.querySelector(".myp").innerText;
-shareData = {
-  text: shared,
-};
+
+
 
 let btnShare = document.querySelector(".btn-share");
 btnShare.addEventListener("click", async () => {
+  let shared = document.querySelector(".myp").innerText;
+shareData = {
+  text: shared,
+};
   await navigator.share(shareData);
 });
 
