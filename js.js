@@ -59,13 +59,11 @@ function inputs() {
     <p>${lab3} = ${num3}</p>
     <p>${lab10} = <span id="sumTkrep" class="tkrep">${num10.value}</span></p>`;
 
-  document.querySelector(".myp").innerHTML = myp;
+    document.querySelector(".myp").innerHTML = myp;
 
-  let shared = document.querySelector(".myp").innerText;
-  shareData = {
-    text: shared,
-  };
+
 }
+
 let btnTkrep = document.querySelector(".btn-tkrep");
 btnTkrep.onclick = function () {
 
@@ -90,6 +88,13 @@ btnTkrep.onclick = function () {
         
     sumTkrep.innerHTML = nuew; //اطبع الفاليو الجديدة
   }
+};
+
+document.querySelector(".myp");
+
+let shared = document.querySelector(".myp").innerText;
+shareData = {
+  text: shared,
 };
 
 let btnShare = document.querySelector(".btn-share");
