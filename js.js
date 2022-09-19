@@ -74,7 +74,7 @@ btnTkrep.onclick = function () {
   // console.log(last);
   var nuew = +Ptkrep; // عملت ديكلير لمتغير جديد بنفس قيمة فاليو الانبوت عشان عايز اعدل عليه بدون ما اعدل علي الاصل
   // console.log(nuew);
-  if (last <= 5) {
+  if (last >= 1 && last <= 5) {
     // لو اخر رقم اصغر من رقم 5
     var reselt = 5 - last; //اطرحه من رقم خمسة
     Number((nuew += reselt)); // الناتج اجمعه علي المتغير الجديد اللي كان بيساوي فاليو الانبوت
@@ -88,6 +88,7 @@ btnTkrep.onclick = function () {
         
     sumTkrep.innerHTML = nuew; //اطبع الفاليو الجديدة
   }
+   document.getElementById("input11").value = nuew * document.getElementById("input3").value;
 };
 
 
