@@ -80,8 +80,8 @@ h5{
   input{
       border: blue solid 1px;
 }
-.btn-share{
-  margin: 15px;
+.share{
+  margin: 15px 5px;
   border-radius: 20px;
   background-color: lightblue;
   padding: 10px 20px;
