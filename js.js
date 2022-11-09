@@ -1,7 +1,7 @@
 localStorage.setItem("rate", "");
 onload = function () {
   if (localStorage.getItem("rate") == "") {
-    document.getElementById("input4").value = 27;
+    document.getElementById("input4").value = 30;
   } else {
     document.getElementById("input4").value = localStorage.getItem("rate");
   }
